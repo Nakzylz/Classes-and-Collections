@@ -1,3 +1,24 @@
+// Task 1 Created data class named Event. Created instance to output info.
+
+data class Event(
+    val title: String,
+    val description: String?,
+    val daypart: String,
+    val durationInMinutes: Int
+)
+fun main() {
+    val Event = Event(
+        title = "Study Kotlin",
+        description = "Commit to studying Kotlin at least 15 minutes per day.",
+        daypart = "Evening",
+        durationInMinutes = 15
+    )
+    
+    println(Event)
+}
+
+// Task 2 Created the enum class.
+
 enum class Daypart {
     MORNING,
     AFTERNOON,
